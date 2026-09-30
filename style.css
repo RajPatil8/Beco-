@@ -5,3 +5,60 @@
     object-fit: contain;
     display: block;
 }
+/* FIX HORIZONTAL OVERFLOW */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Keep sections inside the screen */
+section,
+header,
+footer,
+.marquee {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Product section fix */
+.product-grid {
+    width: 100%;
+    min-width: 0;
+}
+
+.product-card {
+    min-width: 0;
+}
+
+/* Exchange section fix */
+.exchange-card {
+    width: 100%;
+    max-width: 100%;
+}
+
+.exchange-content {
+    min-width: 0;
+}
+
+/* Hero fix */
+.hero {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.hero-visual {
+    min-width: 0;
+    overflow: hidden;
+}
