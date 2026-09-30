@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beco Threads | हर धागे में एक बेहतर कल।</title>
+<meta name="description" content="Beco Threads — Sustainable clothing where every thread has a story.">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+<a href="#home" class="logo"><span>BECO</span><small>THREADS</small></a>
+<nav id="navMenu">
+<a href="#story">Our Story</a><a href="#products">Collections</a><a href="#tracker">Thread Tracker</a><a href="#exchange">Exchange</a><a href="#impact">Impact</a>
+</nav>
+<div class="nav-actions">
+<button class="cart-btn" onclick="openCart()">🛍 <span id="cartCount">0</span></button>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<p class="eyebrow">A NEW CHAPTER IN SUSTAINABLE CLOTHING</p>
+<h1>Every thread has <span>a story.</span></h1>
+<p class="hero-hindi">हर धागे में एक बेहतर कल।</p>
+<p class="hero-text">Discover clothing designed with better materials, transparent sourcing and a future in mind.</p>
+<div class="hero-buttons">
+<a href="#products" class="btn primary">Explore Collection →</a>
+<a href="#story" class="btn secondary">Discover Our Story</a>
+</div>
+<div class="hero-stats">
+<div><strong>100%</strong><span>Traceable Stories</span></div>
+<div><strong>₹200</strong><span>Exchange Benefit</span></div>
+<div><strong>Better</strong><span>Every Thread</span></div>
+</div>
+</div>
+<div class="hero-visual">
+<div class="fabric-card card-one"><span>ORGANIC</span></div>
+<div class="fabric-card card-two"><span>RECYCLED</span></div>
+<div class="hero-circle"><span>THREAD<br>TRACKER</span></div>
+</div>
+</section>
+
+<div class="marquee"><div>HAR DHAAGE KI KAHANI ✦ BETTER THREADS. BETTER CHOICES. ✦ HAR DHAAGE KI KAHANI ✦ BETTER THREADS. BETTER CHOICES. ✦</div></div>
+
+<section class="story section" id="story">
+<div class="section-label">01 — OUR STORY</div>
+<div class="story-grid">
+<div><h2>Sustainability shouldn't be something you <em>just believe.</em></h2></div>
+<div class="story-text">
+<p>We believe conscious clothing should be stylish, accessible and transparent.</p>
+<p>That's why every Beco Threads product is designed around one simple question:</p>
+<blockquote>“Can we show you exactly where this thread came from?”</blockquote>
+<p>From the material to the making, we're building a clothing experience where sustainability becomes something you can see.</p>
+</div>
+</div>
+</section>
+
+<section class="tracker section" id="tracker">
+<div class="tracker-content">
+<div class="section-label light">02 — THREAD TRACKER</div>
+<h2>Scan the tag.<br><span>See the story.</span></h2>
+<p>Every Beco Threads product comes with a QR-powered Thread Tracker. Discover the journey behind your piece.</p>
+<div class="journey">
+<div class="journey-item"><div class="journey-icon">🌱</div><span>Farm</span></div><div class="line"></div>
+<div class="journey-item"><div class="journey-icon">🧵</div><span>Mill</span></div><div class="line"></div>
+<div class="journey-item"><div class="journey-icon">👕</div><span>Made</span></div><div class="line"></div>
+<div class="journey-item"><div class="journey-icon">🌍</div><span>Impact</span></div>
+</div>
+<button class="btn light-btn" onclick="openTracker()">Try Thread Tracker →</button>
+</div>
+<div class="qr-box"><div class="qr-placeholder"><div class="qr-grid">█ ▄ █ ▀ █ ▄<br>▀ █ ▄ █ ▀ █<br>█ ▀ █ ▄ █ ▀<br>▄ █ ▀ █ ▄ █<br>█ ▄ █ ▀ █ ▄</div></div><p>SCAN TO DISCOVER</p></div>
+</section>
+
+<section class="products section" id="products">
+<div class="section-heading">
+<div><div class="section-label">03 — COLLECTIONS</div><h2>Made for <em>everyday.</em></h2></div>
+<p>Simple silhouettes. Conscious materials. Clear prices.</p>
+</div>
+<div class="filter-buttons">
+<button class="filter active" data-filter="all">All</button><button class="filter" data-filter="tees">Tees & Tops</button><button class="filter" data-filter="comfort">Comfort Wear</button><button class="filter" data-filter="shirts">Shirts</button><button class="filter" data-filter="kids">Little Beco</button>
+</div>
+<div class="product-grid">
+<article class="product-card" data-category="tees">
+<div class="product-image product-green"><span class="material">ORGANIC COTTON</span><button class="heart" onclick="toggleHeart(this)">♡</button><div class="product-shirt">BECO</div></div>
+<div class="product-info"><div><h3>Everyday Organic Tee</h3><p>Organic Cotton</p></div><strong>₹699</strong></div>
+<button class="add-cart" onclick="addToCart('Everyday Organic Tee',699)">Add to Cart</button>
+</article>
+<article class="product-card" data-category="comfort">
+<div class="product-image product-sand"><span class="material">BAMBOO + COTTON</span><button class="heart" onclick="toggleHeart(this)">♡</button><div class="product-shirt">BECO</div></div>
+<div class="product-info"><div><h3>Soft Comfort Lounge</h3><p>Bamboo + Cotton</p></div><strong>₹999</strong></div>
+<button class="add-cart" onclick="addToCart('Soft Comfort Lounge',999)">Add to Cart</button>
+</article>
+<article class="product-card" data-category="shirts">
+<div class="product-image product-blue"><span class="material">HEMP / LINEN</span><button class="heart" onclick="toggleHeart(this)">♡</button><div class="product-shirt">BECO</div></div>
+<div class="product-info"><div><h3>Linen Hemp Shirt</h3><p>Hemp / Linen Blend</p></div><strong>₹1,499</strong></div>
+<button class="add-cart" onclick="addToCart('Linen Hemp Shirt',1499)">Add to Cart</button>
+</article>
+<article class="product-card" data-category="kids">
+<div class="product-image product-yellow"><span class="material">SAFE DYES</span><button class="heart" onclick="toggleHeart(this)">♡</button><div class="product-shirt">LITTLE<br>BECO</div></div>
+<div class="product-info"><div><h3>Little Beco Tee</h3><p>Organic Cotton</p></div><strong>₹599</strong></div>
+<button class="add-cart" onclick="addToCart('Little Beco Tee',599)">Add to Cart</button>
+</article>
+</div>
+</section>
+
+<section class="exchange section" id="exchange">
+<div class="exchange-card">
+<div class="exchange-content">
+<div class="section-label">04 — PURANA KAPDA, NAYA KAL</div>
+<h2>Your old clothes deserve a <em>second life.</em></h2>
+<p>Bring your unused clothes to Beco. Get ₹200 off your next purchase. We'll recycle or donate them and share the impact with you.</p>
+<button class="btn primary" onclick="openExchange()">Start an Exchange →</button>
+</div>
+<div class="exchange-number"><span>GET</span><strong>₹200</strong><span>OFF</span></div>
+</div>
+</section>
+
+<section class="impact section" id="impact">
+<div class="section-heading">
+<div><div class="section-label">05 — OUR PROMISE</div><h2>Proof over <em>promises.</em></h2></div>
+<p>Sustainability becomes meaningful when customers can see the impact.</p>
+</div>
+<div class="impact-grid">
+<div class="impact-card"><span>01</span><h3>Traceability</h3><p>Follow the journey of your product through Thread Tracker.</p></div>
+<div class="impact-card"><span>02</span><h3>Transparency</h3><p>Clear information about materials, sourcing and impact.</p></div>
+<div class="impact-card"><span>03</span><h3>Circularity</h3><p>Give old clothes another life through the Purana Kapda, Naya Kal movement.</p></div>
+<div class="impact-card"><span>04</span><h3>People</h3><p>Celebrate artisan partners and the people behind every piece.</p></div>
+</div>
+</section>
+
+<section class="final-cta">
+<div><p class="eyebrow">EVERY THREAD MATTERS</p><h2>Wear a better<br>tomorrow.</h2><p>हर धागे में एक बेहतर कल।</p><a href="#products" class="btn light-btn">Shop Beco Threads →</a></div>
+</section>
+
+<footer>
+<div class="footer-top">
+<div class="footer-brand"><div class="logo"><span>BECO</span><small>THREADS</small></div><p>Better choices, one thread at a time.</p></div>
+<div class="footer-links">
+<div><h4>Explore</h4><a href="#story">Our Story</a><a href="#products">Collections</a><a href="#tracker">Thread Tracker</a><a href="#exchange">Exchange</a></div>
+<div><h4>Connect</h4><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">LinkedIn</a><a href="#">Contact</a></div>
+</div>
+</div>
+<div class="footer-bottom"><span>© 2026 Beco Threads</span><span>हर धागे में एक बेहतर कल।</span></div>
+</footer>
+
+<div class="modal" id="cartModal"><div class="modal-box"><button class="close" onclick="closeCart()">×</button><h2>Your Bag</h2><div id="cartItems"><p class="empty-cart">Your bag is empty.</p></div><div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn primary full" onclick="checkout()">Checkout →</button></div></div>
+
+<div class="modal" id="trackerModal"><div class="modal-box tracker-modal"><button class="close" onclick="closeTracker()">×</button><div class="tracker-demo"><span class="section-label">THREAD TRACKER</span><h2>Your product has a story.</h2><div class="tracker-number">BT-2026-001</div><div class="tracker-details"><div><span>Material</span><strong>Organic Cotton</strong></div><div><span>Origin</span><strong>India</strong></div><div><span>Water Saved</span><strong>1,850 L</strong></div><div><span>Carbon Saved</span><strong>2.4 kg</strong></div></div></div></div></div>
+
+<div class="modal" id="exchangeModal"><div class="modal-box"><button class="close" onclick="closeExchange()">×</button><div class="section-label">PURANA KAPDA, NAYA KAL</div><h2>Give your clothes a second life.</h2><p>Enter your email and we'll help you get started with your exchange.</p><form onsubmit="submitExchange(event)"><input type="email" placeholder="Your email address" required><button class="btn primary full">Start My Exchange</button></form></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
